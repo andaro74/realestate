@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs"
+    Inherits="RealEstateWeb.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link id="Link1" runat="server" rel="shortcut icon" href="~/favicon.ico" type="image/x-icon" />
+    <link id="Link2" runat="server" rel="icon" href="~/favicon.ico" type="image/ico" />
+    <title>Monica Flores. Sales Representative</title>
+    <link type="text/css" rel="stylesheet" href="~/Styles/css-content.css" />
+    <link type="text/css" href="~/Styles/redmond/jquery-ui-1.8.13.custom.css" rel="stylesheet" />	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <!--TOP INFORMTION-->
+        <div id="top-information">
+            <div id="logo">
+                <asp:Image ID="imgLogo" runat="server" ImageUrl="~/images/Application/LogoNameSimple.jpg" />
+            </div>
+            <div id="top-information-office">
+ 
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                            <a href="~/Login/Login.aspx" id="HeadLoginStatus" runat="server">Log In</a>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold">
+                            <asp:LoginName ID="HeadLoginName" runat="server" />
+                        </span> /
+                        <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out"
+                            LogoutPageUrl="~/" />
+                        
+                    </LoggedInTemplate>
+                </asp:LoginView>
+              </div>
+            <div id="top-information-cell">
+                Phone Number:
+                <asp:Literal ID="LitCell" runat="server"></asp:Literal></div>
+            <div id="top-right-logo">
+                <asp:Image ID="imgRoyalLePage" runat="server" ImageUrl="~/images/Application/royalLePageLogo.gif"
+                    Height="44px" Width="188px" />
+            </div>
+        </div>
+        <!--TOP NAV-->
+        <div id="nav-main">
+            <ul>
+                <li>
+                    <asp:HyperLink ID="linkHome" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="linkListings" runat="server" NavigateUrl="~/Listings.aspx">Listings</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="lnkSold" runat="server" NavigateUrl="~/SoldProperties.aspx">Sold</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="lnkContact" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
+                </li>
+                <asp:LoginView ID="MenuView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <li>
+                            <asp:HyperLink ID="lnkAdmin" runat="server" NavigateUrl="~/Authenticated/PropertyListingManagement.aspx">Administration</asp:HyperLink>
+                        </li>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </ul>
+            <div>
+           
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <!--FOOTER-->
+    <div id="footer">
+        &nbsp;<div>
+            &nbsp;
+        </div>
+    </div>
+    <div id="footer-sub">
+        <div>
+            <ul>
+                <li>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Listings.aspx">Listings</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/SoldProperties.aspx">Sold</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+DECLARE @MlsId AS INT, @PropId AS INT
+
+SET @MlsId=774246
+
+
+SELECT @PropId=PropertyId FROM PROPERTY
+WHERE MLSId=@MlsId
+
+SELECT @PropId
+
+DELETE Picture WHERE PropertyId=@PropId
+
+
+DELETE Property WHERE MLSId=@MlsId
+
+SELECT * FROM PROPERTY WHERE MLSId=@MlsId

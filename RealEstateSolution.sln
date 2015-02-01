@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{97459656-C9D9-4926-84A5-197C1E9911EF}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		RealEstateSolution.vsmdi = RealEstateSolution.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstateWeb", "RealEstateWeb\RealEstateWeb.csproj", "{9F7104BC-DFCA-4B77-A74D-B870F0D3ED34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstateDataLayer", "RealEstateDataLayer\RealEstateDataLayer.csproj", "{A79F61BF-2BBD-40E6-AB94-834BA204C4CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstateBusinessLayer", "RealEstateBusinessLayer\RealEstateBusinessLayer.csproj", "{D33833A9-5929-4A90-938A-428C1C1D78A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstatePOCO", "RealEstatePOCO\RealEstatePOCO.csproj", "{D0B96AE9-FD62-4976-A8BD-70C46F4375B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstateTests", "RealEstateTests\RealEstateTests.csproj", "{0DF94A46-2474-4036-9AA1-D605E6F0E582}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs01.discountasp.net:8080/tfs/andaro74
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = RealEstateBusinessLayer\\RealEstateBusinessLayer.csproj
+		SccProjectName1 = RealEstateBusinessLayer
+		SccLocalPath1 = RealEstateBusinessLayer
+		SccProjectUniqueName2 = RealEstateDataLayer\\RealEstateDataLayer.csproj
+		SccProjectName2 = RealEstateDataLayer
+		SccLocalPath2 = RealEstateDataLayer
+		SccProjectUniqueName3 = RealEstatePOCO\\RealEstatePOCO.csproj
+		SccProjectName3 = RealEstatePOCO
+		SccLocalPath3 = RealEstatePOCO
+		SccProjectUniqueName4 = RealEstateTests\\RealEstateTests.csproj
+		SccProjectName4 = RealEstateTests
+		SccLocalPath4 = RealEstateTests
+		SccProjectUniqueName5 = RealEstateWeb\\RealEstateWeb.csproj
+		SccProjectName5 = RealEstateWeb
+		SccLocalPath5 = RealEstateWeb
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = RealEstateSolution.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F7104BC-DFCA-4B77-A74D-B870F0D3ED34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F7104BC-DFCA-4B77-A74D-B870F0D3ED34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F7104BC-DFCA-4B77-A74D-B870F0D3ED34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F7104BC-DFCA-4B77-A74D-B870F0D3ED34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A79F61BF-2BBD-40E6-AB94-834BA204C4CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A79F61BF-2BBD-40E6-AB94-834BA204C4CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A79F61BF-2BBD-40E6-AB94-834BA204C4CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A79F61BF-2BBD-40E6-AB94-834BA204C4CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D33833A9-5929-4A90-938A-428C1C1D78A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D33833A9-5929-4A90-938A-428C1C1D78A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D33833A9-5929-4A90-938A-428C1C1D78A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D33833A9-5929-4A90-938A-428C1C1D78A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0B96AE9-FD62-4976-A8BD-70C46F4375B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0B96AE9-FD62-4976-A8BD-70C46F4375B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0B96AE9-FD62-4976-A8BD-70C46F4375B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0B96AE9-FD62-4976-A8BD-70C46F4375B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DF94A46-2474-4036-9AA1-D605E6F0E582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DF94A46-2474-4036-9AA1-D605E6F0E582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DF94A46-2474-4036-9AA1-D605E6F0E582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DF94A46-2474-4036-9AA1-D605E6F0E582}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

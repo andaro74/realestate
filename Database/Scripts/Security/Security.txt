@@ -1,0 +1,14 @@
+Debug Database
+
+aspnet_regsql -S  ANDARO74-PC\MSSQLSERVER2008 -U realestateuser -P victorinox -A all -d RealEstateDB 
+
+
+Deployment
+aspnet_regsql -S  ANDARO74-PC\MSSQLSERVER2008 -U realestateuser -P victorinox -A all -d RealEstateDB_Debug 
+
+
+Production
+
+aspnet_regsql -S  tcp:sql2k804.discountasp.net -U SQL2008R2_784163_realestatedb_user -P k4m1j274 -A all -d SQL2008R2_784163_realestatedb
+
+

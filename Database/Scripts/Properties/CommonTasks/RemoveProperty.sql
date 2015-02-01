@@ -1,0 +1,13 @@
+
+DECLARE @MlsId AS INT
+
+SET @MlsId=777787
+
+SELECT TOP 10 StatusId, * FROM PROPERTY
+WHERE MLSId=@MlsId
+
+Update Property SET StatusId=0 
+WHERE MLSId=@MlsId
+
+SELECT TOP 10 StatusId, * FROM PROPERTY
+WHERE MLSId=@MlsId
